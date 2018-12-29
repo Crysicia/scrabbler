@@ -1,28 +1,29 @@
 # Scrabble
 
-## Setup 
+## Setup
 
-1. Fork and clone (remember to clone YOUR fork).
-2. Run `bundle install`.
-3. Run `rspec`.
+1. Fork et clone ce repo (N'oublie pas de clone TON fork).
+2. Exécute `bundle install`.
+3. Exécute `rspec`.
 
-This will run several tests on the code in the `lib/scrabble_word.rb` file. The first time you run `rspec` all the tests will fail because there basically isn't any code in `lib/scrabble_word.rb`.
+Cela va lancer plusieurs tests sur le fichier `lib/scrabble_word.rb`. La première fois que tu exécutes `rspec` tous les tests vont échouer parce qu'il n'y a pas encore de code dans `lib/scrabble_word.rb`.
 
-Your goal is to add code to `lib/scrabble_word.rb` such that all the tests pass. Until you get to the bonus, **there is no need to modify any files except `lib/scrabble_word.rb`**. 
+Tu vas devoir ajouter du code dans `lib/scrabble_word.rb` de manière à ce que tous les tests passent. À moins de vouloir faire l'exercice bonus, **tu n'auras qu'à modifier `lib/scrabble_word.rb`**.
 
-If you've never played the game Scrabble before, you may want to ask your neighbor about the rules of the game and how words are scored.
+Si tu n'as jamais joué au Scrabble, demande à ton voisin de t'expliquer les règles :).
 
-## Prompt
+## Specs
 
-* Define a class named ScrabbleWord with an `initialize` method that takes one argument, `word`, and stores it in an instance variable `@word`.
+* Définis une classe ScrabbleWord avec une méthode `initialize` qui prend un argument (`word`) et qui le stocke dans une variable d'instance `@word`.
 
-* Write a "getter" for this instance variable `@word` that returns the word as a lowercase string.
+* Écris un "getter" qui renvoie `@word`en basse-casse.
 
-* Define a method `.score` that returns the scrabble score of the word.
+* Définis une méthode `score` qui renvoie la valeur en point du mot.
 
-* Define a method `.multiplier_score` that takes a multiplier as an argument and returns a multiplied value of the score. (Think double or triple word score.)
+* Définis une méthode `multiplier_score` qui prend un multiplicateur en argument et renvoie le score multiplié. (Pense au mot compte double et triple.)
 
-Here are the letter values. Think about how you might put this data in a usable format for your methods above.
+Voici la valeur des lettres. Réfléchis à comment tu pourrais mettre ces données dans un format utilisable.
+
 
 ```
 a: 1, b: 3, c: 3, d: 2, e: 1,
@@ -32,8 +33,3 @@ p: 3, q: 10, r: 1, s: 1, t: 1,
 u: 1, v: 4, w: 4, x: 8, y: 4,
 z: 10
 ```
-
-## Deliverable
-
-Submit a pull request with your current progress. Include your Completeness (1-5) and Comfort (1-5). We recommend you include your pseudocode, comments, and descriptions of areas where you had difficulty.
-
